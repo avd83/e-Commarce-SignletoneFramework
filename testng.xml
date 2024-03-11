@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="e-Commarce Automation Test Suite" parallel="false" thread-count="5">
+	
+<listeners>
+<listener class-name="com.qa.base.Listeners"/>
+</listeners>
+
+<test  name="e-Commarce Test Cases">
+	<parameter name="browser" value="chrome"/>
+    <classes>
+		<class name="com.qa.tests.LoginTest"/>
+		<class name="com.qa.tests.HomePageTest"/>
+		<class name="com.qa.tests.CartPageTest"/>
+		<class name="com.qa.tests.PaymentPageTest"/>
+		<class name="com.qa.tests.FilterSearchTest"/>
+		<class name="com.qa.tests.OrderPageTest"/>
+		<class name="com.qa.tests.OrderReceiptPageTest"/>
+		
+      </classes>
+  </test> 
+ </suite> 
