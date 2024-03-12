@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class PageDriver {
 	
-	private static final ThreadLocal<WebDriver> webdriver = new ThreadLocal<>();
+	private static final ThreadLocal<WebDriver> webdriver = new ThreadLocal<>();// create only thread to traverse whole project
 	
 	private static PageDriver instance = null;// singleton class private variable 
 	
